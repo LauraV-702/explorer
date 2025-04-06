@@ -33,5 +33,47 @@ public class ExplorerSearch {
         // Please also make more test cases
         // I STRONGLY RECOMMEND testing some helpers you might make too
         return -1;
+        /*
+         initialize an int array
+            make a variable, and pass in island, call the explorer method here
+         initialize a 2D array to store the rows and columns
+            *note this is like the hashset for graphs, store the VISITED space here
+         thenn return the reachableAreaHelper here, pass in  island, startingPosition, visited
+         */
     }
+    /*
+     00000----Helper Method here (pass in 2d arrays for island, current, and the visited)
+        to traverse through the island 
+     initilize variables for rows and for columns
+     base case
+     marked those visited
+     logic
+        pass in the possibleMoves here
+        for each loop
+     return the number of spaces 
+     */
+
+     /*
+     00000----another helper method here for the explorerLocation, just pass in the 2D island array
+        for loop for the rows
+            for loop for the columns
+                if statement, if row * column positions 0
+                    return new int array of the explorer
+      */
+
+      /*
+     0000----Another helperMethod for possibleMoves
+       
+       initialize the current for row and column
+
+       //UP
+       
+       //DOWN
+
+       //LEFT
+
+       //RIGHT
+
+       return moves
+       */
 }
