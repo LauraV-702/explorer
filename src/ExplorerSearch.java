@@ -32,14 +32,11 @@ public class ExplorerSearch {
         // Implement your method here!
         // Please also make more test cases
         // I STRONGLY RECOMMEND testing some helpers you might make too
-        return -1;
-        /*
-         initialize an int array
-            make a variable, and pass in island, call the explorer method here
-         initialize a 2D array to store the rows and columns
-            *note this is like the hashset for graphs, store the VISITED space here
-         thenn return the reachableAreaHelper here, pass in  island, startingPosition, visited
-         */
+        
+        int[] start = explorerLocation(island);
+        boolean[][] visited = new boolean[island.length][island[0].length];
+        return reachableAreaHelper(island, start, visited);
+
     }
 
      public static int reachableAreaHelper(int[][]island, int[] current, boolean[][] visited) {
@@ -92,6 +89,4 @@ public class ExplorerSearch {
 
        return moves;
     }
-
-
 }
