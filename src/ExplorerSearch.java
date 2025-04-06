@@ -41,19 +41,6 @@ public class ExplorerSearch {
          thenn return the reachableAreaHelper here, pass in  island, startingPosition, visited
          */
     }
-    /*
-     00000----Helper Method here (pass in 2d arrays for island, current, and the visited)
-        to traverse through the island 
-     initilize variables for rows and for columns
-     base case
-     marked those visited
-     logic
-        pass in the possibleMoves here
-        for each loop
-     return the number of spaces 
-     */
-
-
 
      public static int reachableAreaHelper(int[][]island, int[] current, boolean[][] visited) {
         int row = current[0];
@@ -72,14 +59,6 @@ public class ExplorerSearch {
 
         return area;
      }
-
-     /*
-     00000----another helper method here for the explorerLocation, just pass in the 2D island array
-        for loop for the rows
-            for loop for the columns
-                if statement, if row * column positions 0
-                    return new int array of the explorer
-      */
 
      public static int[] explorerLocation(int[][] island) {
         for (int r = 0; r < island.length; r++) {
@@ -108,4 +87,11 @@ public class ExplorerSearch {
 
        return moves
        */
+
+    public static List<int[]> possibleMoves(char[][] island, int[]current)  {
+       
+
+    }
+
+
 }
