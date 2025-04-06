@@ -38,7 +38,7 @@ public class ExplorerSearch {
         return reachableAreaHelper(island, start, visited);
     }
 
-     public static int reachableAreaHelper(int[][]island, int[] current, boolean[][] visited) {
+    public static int reachableAreaHelper(int[][]island, int[] current, boolean[][] visited) {
         int row = current[0];
         int col = current[1];
 
