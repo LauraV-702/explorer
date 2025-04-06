@@ -36,7 +36,6 @@ public class ExplorerSearch {
         int[] start = explorerLocation(island);
         boolean[][] visited = new boolean[island.length][island[0].length];
         return reachableAreaHelper(island, start, visited);
-
     }
 
      public static int reachableAreaHelper(int[][]island, int[] current, boolean[][] visited) {
@@ -49,6 +48,9 @@ public class ExplorerSearch {
 
         //check if current is blocked by water or mountains
         if (island[row][col] == 2 || island[row][col] == 3) { return 0; }
+
+        //check if current already visited here
+        if(visited[row][col]) { return 0; }
 
         visited[row][col] = true;
 
@@ -72,7 +74,6 @@ public class ExplorerSearch {
         }
         throw new IllegalArgumentException("No explorer present");
     }
-
 
     public static List<int[]> possibleMoves(int[][] island, int[]current)  {
        int row = current[0];
