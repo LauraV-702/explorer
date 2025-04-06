@@ -57,7 +57,13 @@ public class ExplorerSearch {
         int row = current[0];
         int col = current[1];
 
-        
+        //check if current is out of bounds
+        if (row < 0 || row >= island.length || 
+            col < 0 || col >= island[0].length) { return 0; }
+
+        //check if current is blocked by water or mountains
+        if (island[row][col] == 2 || island[row][col] == 3) { return 0; }
+
      }
 
      /*
