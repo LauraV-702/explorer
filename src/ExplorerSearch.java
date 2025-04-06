@@ -53,6 +53,8 @@ public class ExplorerSearch {
      return the number of spaces 
      */
 
+
+
      public static int reachableAreaHelper(int[][]island, int[] current, boolean[][] visited) {
         int row = current[0];
         int col = current[1];
@@ -64,6 +66,11 @@ public class ExplorerSearch {
         //check if current is blocked by water or mountains
         if (island[row][col] == 2 || island[row][col] == 3) { return 0; }
 
+        visited[row][col] = true;
+
+        int area = 1;
+
+        return area;
      }
 
      /*
@@ -73,6 +80,18 @@ public class ExplorerSearch {
                 if statement, if row * column positions 0
                     return new int array of the explorer
       */
+
+     public static int[] explorerLocation(int[][] island) {
+        for (int r = 0; r < island.length; r++) {
+            for (int c = 0; c < island[0].length; c++) {
+                if (island[r][c] == 0) {
+                    return new int[]{r, c}; 
+                }
+            }
+        }
+        throw new IllegalArgumentException("No space present");
+    }
+
 
       /*
      0000----Another helperMethod for possibleMoves
