@@ -53,6 +53,13 @@ public class ExplorerSearch {
      return the number of spaces 
      */
 
+     public static int reachableAreaHelper(int[][]island, int[] current, boolean[][] visited) {
+        int row = current[0];
+        int col = current[1];
+
+        
+     }
+
      /*
      00000----another helper method here for the explorerLocation, just pass in the 2D island array
         for loop for the rows
