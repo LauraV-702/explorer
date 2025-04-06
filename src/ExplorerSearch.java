@@ -72,10 +72,11 @@ public class ExplorerSearch {
     }
 
 
-      /*
-     0000----Another helperMethod for possibleMoves
-       
-       initialize the current for row and column
+    public static List<int[]> possibleMoves(char[][] island, int[]current)  {
+       int row = current[0];
+       int col = current[1];
+
+       List<int[]> moves = new ArrayList<>();
 
        //UP
        
@@ -85,11 +86,6 @@ public class ExplorerSearch {
 
        //RIGHT
 
-       return moves
-       */
-
-    public static List<int[]> possibleMoves(char[][] island, int[]current)  {
-       
 
     }
 
