@@ -17,4 +17,18 @@ public class ExplorerSearchTest {
 
     // Add more tests here!
     // Come up with varied cases
+
+    @Test    
+    public void testReachableArea_OnlyWater() {
+        int[][] island = {
+            {2, 2, 2, 2, 2},
+            {2, 2, 2, 2, 2},
+            {2, 2, 0, 2, 2},
+            {2, 2, 2, 2, 2},
+            {2, 2, 2, 2, 2}
+        };
+        int actual = ExplorerSearch.reachableArea(island);
+        assertEquals(1, actual); 
+    }
+     
 }
