@@ -54,6 +54,11 @@ public class ExplorerSearch {
 
         int area = 1;
 
+        //traverse through possible directions here
+        List<int[]> moves = possibleMoves(island, current);
+        for(int[] move : moves) {
+            area += reachableAreaHelper(island, move, visited);
+        }
         return area;
      }
 
@@ -65,11 +70,11 @@ public class ExplorerSearch {
                 }
             }
         }
-        throw new IllegalArgumentException("No space present");
+        throw new IllegalArgumentException("No explorer present");
     }
 
 
-    public static List<int[]> possibleMoves(char[][] island, int[]current)  {
+    public static List<int[]> possibleMoves(int[][] island, int[]current)  {
        int row = current[0];
        int col = current[1];
 
