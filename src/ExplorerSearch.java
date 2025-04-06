@@ -79,14 +79,18 @@ public class ExplorerSearch {
        List<int[]> moves = new ArrayList<>();
 
        //UP
-       
+       moves.add(new int[]{row - 1, col});
+
        //DOWN
+       moves.add(new int[]{row + 1, col});
 
        //LEFT
+       moves.add(new int[]{row, col - 1});
 
        //RIGHT
+       moves.add(new int[]{row, col + 1});
 
-
+       return moves;
     }
 
 
